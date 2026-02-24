@@ -1,0 +1,253 @@
+.contactus-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Carousel Header */
+  .contactus-carousel {
+       width: 100%;
+    position: relative;
+    /* height: 400px !important; */
+  }
+  
+  /* Form and Image Container */
+  .contactus-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Left side - form */
+  .contactus-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contactus-form h1 {
+    color: #E67320;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .required-asterisk {
+    color: red;
+    margin-left: 4px;
+  }
+  
+  .contactus-form input,
+  .contactus-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .contactus-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    width: fit-content;
+    padding: 12px 24px;
+    background-color: #E67320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #e67b33;
+  }
+  
+  /* Right side - Image */
+  .contactus-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactus-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* ContactUs.css - Additional Styles for Spinner and Dialog */
+
+/* Overlay that covers entire screen */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spinner box styling */
+.spinner-box {
+  /* background-color: white; */
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Success dialog styles */
+.success-dialog {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  outline: none;
+}
+
+.success-dialog h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #E67320;
+}
+
+.success-dialog p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Close button inside dialog */
+.close-dialog {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.close-dialog:focus {
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+#phone-error {
+  color:red;
+}
+#email-error {
+  color:red;
+}
+#name-error {
+  color:red;
+}
+#message-error {
+  color:red;
+}
+
+
+/* Error and success messages */
+.error {
+  color: red;
+  margin-top: 0.5rem;
+}
+.success {
+  color: green;
+  margin-top: 0.5rem;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .success-dialog {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+
+  .success-dialog h2 {
+    font-size: 1.1rem;
+  }
+
+  .success-dialog p {
+    font-size: 0.95rem;
+  }
+
+  .close-dialog {
+    font-size: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+   .contactus-carousel {
+       height:250px !important;
+  }
+  .contactus-image {
+   display:none;
+  }
+}
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .contactus-content {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contactus-carousel {
+       height:250px !important;
+  }
+    .submit-button {
+      align-self: center;
+    }
+  }
+  

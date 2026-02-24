@@ -1,0 +1,138 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    /* border-bottom: 2px solid #f4f4f4; */
+    padding-bottom: 5px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 8px 0;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #FF944F;
+  }
+
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section a {
+    color: #FF944F;
+  }
+  
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-section {
+      margin-bottom: 15px;
+    }
+  }
+
+
+ .social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FF944F;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo1 {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  height: 60px; /* or whatever fits your header */
+}
+
+.logo-img {
+  max-height: 100%;
+  max-width: 200px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-divider {
+  height: 1px;
+  background-color: #333;
+  margin: 0 0;
+  max-width:100%;
+}
+
+.footer-bottom {
+  color:white;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1px 0;
+  background-color: #333;
+}
+
+.footer-bottom a {
+  color: #FF944F;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Responsive tweaks */
+@media (min-width: 640px) {
+.logo img {
+  max-width: 120px;
+}
+}
+
+@media (min-width: 768px) {
+.logo img {
+  max-width: 160px;
+}
+}
+
+@media (min-width: 1024px) {
+.logo img {
+  max-width: 200px;
+}
+}

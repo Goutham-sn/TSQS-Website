@@ -1,0 +1,157 @@
+/* CodelessAutomation.css */
+
+.automation-container {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #222;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.automation-carousel {
+  width: 100%;
+  /* height:400px !important; */
+}
+
+.automation-carousel h1 {
+  color: white;
+}
+
+.automation-intro {
+  padding: 2rem 4rem;
+  margin-bottom: 40px;
+}
+
+.automation-text-block p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 10px;
+  border-radius: 5px;
+}
+ .image-center-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem; /* optional spacing */
+}
+
+.automation-logos {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.orange-bullets {
+   font-family: 'Montserrat', sans-serif !important;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.orange-bullets li {
+  
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: left;
+}
+
+.orange-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+/* Section Layout */
+.automation-section {
+  margin: 3rem 1rem;
+  padding: 0 2rem;
+}
+
+.automation-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #454789;
+}
+
+.automation-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Text & Image Blocks with new proportions */
+.automation-text {
+  flex: 0 0 50%;
+  min-width: 300px;
+}
+
+.automation-image {
+  flex: 0 0 40%;
+  min-width: 300px;
+}
+
+
+.automation-text p,
+.automation-text ul {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.automation-text ul {
+  padding-left: 20px;
+}
+
+.automation-text ul li {
+  margin-bottom: 8px;
+}
+
+.automation-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .automation-intro,
+  .automation-section {
+    padding: 1rem;
+  }
+
+  .automation-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .automation-carousel {
+    height: 200px;
+  }
+
+  .automation-carousel h2 {
+    font-size: 1.5rem;
+  }
+
+  .automation-text p,
+  .automation-text ul {
+    font-size: 1rem;
+  }
+
+  .automation-section h2 {
+    font-size: 1.6rem;
+  }
+  .automation-intro {
+   margin-top: 1rem;
+}
+}

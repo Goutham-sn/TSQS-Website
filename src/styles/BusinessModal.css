@@ -1,0 +1,167 @@
+/* BusinessModel.css */
+
+.business-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Carousel Section */
+  .business-carousel {
+    width: 100%;
+    position: relative; 
+    /* height: 400px !important;  */
+  }
+  
+  /* Intro Section */
+  .business-intro {
+    padding: 40px;
+    background: white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .business-intro h1 {
+    color: #e0721a;
+    margin-bottom: 1rem;
+  }
+  
+  .business-intro p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgb(51, 49, 49);
+  }
+  
+  /* Cards Section */
+  .business-services {
+    padding: 40px;
+    background: white;
+    width: 100%;
+  }
+  
+  .business-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .business-card {
+    flex: 0 1 calc(50% - 2rem); /* Two per row */
+    max-width: 300px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .business-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .business-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .business-card h3 {
+    text-align:center;
+    margin-top: 1rem;
+    color: #e0721a;
+  }
+  
+  .business-card p {
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+     color: rgb(51, 49, 49);
+  }
+  
+  /* Know More Button */
+  .know-more-btnb {
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e0721a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #e67b33;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .business-card {
+      flex: 0 1 100%;
+    }
+    .business-intro p {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+   .business-carousel {
+    height:250px !important;
+  }
+  }
+  
+
+  /* Background container */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.node {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  animation: float 15s infinite ease-in-out alternate;
+}
+
+.line {
+  position: absolute;
+  background: white;
+  height: 1px;
+  transform-origin: left;
+  opacity: 0.5;
+}
+
+/* Motion keyframes */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(var(--dx, 10px)), calc(var(--dy, 10px)));
+  }
+}

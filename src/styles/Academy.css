@@ -1,0 +1,122 @@
+/* Academy.css */
+
+.academy-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Carousel Section */
+  /* .carousel {
+      width: 100%;
+    position: relative;
+    height: 400px !important;
+  } */
+  
+  /* Intro Section */
+  .academy-intro {
+    padding: 40px;
+    background: white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .academy-intro h1 {
+    color: #e0721a;
+    margin-bottom: 1rem;
+  }
+  
+  .academy-intro p {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Programs Section */
+  .academy-programs {
+    padding: 40px;
+    background: white;
+    width: 100%;
+  }
+  
+  .academy-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .academy-card {
+    flex: 0 1 calc(50% - 2rem); /* 2 cards per row */
+    max-width: 500px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .academy-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .academy-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .academy-card h3 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #e0721a;
+  }
+  
+  .academy-card p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+  }
+  
+  /* Know More Button */
+  .know-more-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e0721a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #e67b33;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .academy-card {
+      flex: 0 1 100%; /* 1 card per row */
+      margin:1rem;
+    }
+    .academy-intro p {
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right:1rem;
+  }
+   .carousel {
+       height:250px !important;
+  }
+  }
+  

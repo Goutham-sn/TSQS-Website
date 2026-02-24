@@ -1,0 +1,209 @@
+/* Quality.css */
+
+.quality-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    overflow-x: hidden;
+     font-family: 'Montserrat', sans-serif !important;
+      
+  }
+
+  .quality-carousel {
+    width: 100%;
+    position: relative;
+    /* height: 400px !important; */
+  }
+
+  /* Section 1: Introduction */
+  .quality-intro {
+    padding: 10px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    color: rgb(51, 49, 49);
+  }
+  
+  .quality-intro h1 {
+    color: #e0721a;
+    margin-bottom: 1rem;
+  }
+  
+  .quality-intro p {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Section 2: Our Quality Services */
+  .quality-services {
+    padding: 40px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 0rem;
+  }
+  
+  .service-card {
+    flex: 1 1 calc(33.33%-2rem);
+    max-width: 300px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card h3 {
+    text-align: center;
+    margin-top: 1rem;
+    color: #e0721a;
+  }
+  
+  .service-card p {
+    color: rgb(51, 49, 49);
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 350;
+     text-align: justify;
+  }
+  
+  /* Section 3: Our Approach */
+  .quality-approach {
+    padding: 40px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quality-approach h2 {
+    color: #E67320;
+  }
+  
+  .quality-approach p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Section 4: Tools & Accelerators */
+  .quality-tools {
+    padding: 40px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quality-tools h2 {
+    color: #E67320;
+  }
+  
+  .quality-tools p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+   
+  }
+  
+  /* Section 5: Customer Impact */
+  .quality-impact {
+    padding: 40px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .quality-impact h2 {
+    color: #E67320;
+  }
+  
+  .quality-impact p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .know-more-btnq{
+  padding: 0.6rem 1.4rem;
+  background-color: #e0721a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s ease;
+}
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+     .quality-intro p {
+           margin-left: 1rem;
+           margin-right: 1rem;
+           text-align: justify;
+    }
+     .quality-approach p {
+    margin: 1rem;
+    text-align: justify;
+  }
+   .service-card p {
+    text-align: justify;
+  }
+   .quality-carousel {
+    height:250px !important;
+  }
+  .quality-intro {
+    margin-top: 2rem;
+  }
+  
+
+  }
+  
+
+  .know-more-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #E67320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .know-more-btn:hover {
+    background-color: #e67b33;
+  }
+  

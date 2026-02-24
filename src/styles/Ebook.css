@@ -1,0 +1,268 @@
+.ebook-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  .ebook-wrapper {
+  position: relative;
+}
+
+  /* Carousel */
+  .ebook-carousel {
+    width: 100%;
+    position: relative;
+    /* height: 400px !important; */
+  }
+  
+  /* Intro */
+  .ebook-intro {
+    width: 100%;
+    background: white;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .ebook-intro h1 {
+    color: #E67320;
+    margin-bottom: 1rem;
+  }
+  
+  .ebook-intro p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  .required-note-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    margin-bottom: -10px; /* Optional: adjust spacing if needed */
+  }
+  
+  .required-note {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  
+  /* Form Section */
+  .ebook-form-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background-color: white;
+    padding: 1 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ebook-form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  .ebook-form input,
+  .ebook-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+ .required-note {
+  font-weight: bold;
+ }
+  .error{
+  color: #e22719;
+  font-size: 0.85rem;
+  margin-top: 4px;
+ 
+}
+
+  
+  .ebook-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .download-btn {
+    background-color: #E67320;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .download-btn:hover {
+    background-color: #e67b33;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .ebook-intro {
+     margin-top: 2rem;
+  }
+  .ebook-intro p {
+      margin-left: 1rem;
+     margin-right: 1rem;
+  }
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .ebook-form {
+      padding: 20px;
+    }
+    .ebook-carousel {
+       height:250px !important;
+    }
+  }
+  
+
+/* Overlay for spinner and dialog */
+/* Full-page dark overlay (for both spinner & dialog) */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Success dialog box */
+.success-dialog {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  max-width: 90%;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  position: relative;
+  outline: none;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.success-dialog h2 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  color: #d9680e;
+}
+
+.success-dialog p {
+  font-size: 1rem;
+  color: rgb(51, 49, 49);
+}
+
+/* Close button */
+.close-dialog {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #444;
+}
+
+.close-dialog:hover,
+.close-dialog:focus {
+  outline: 2px solid #ff8800; /* Orange focus indicator */
+  outline-offset: 3px;
+  border-radius: 50%;
+  background-color: rgba(255, 136, 0, 0.1);
+}
+
+/* Spinner container */
+.spinner-box {
+  text-align: center;
+}
+
+/* Spinner override for color */
+.spinner-box svg {
+  stroke: orange !important; /* overrides default blue */
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .success-dialog {
+    padding: 1.5rem 1rem;
+    width: 95%;
+  }
+
+  .success-dialog h2 {
+    font-size: 1.1rem;
+  }
+
+  .success-dialog p {
+    font-size: 0.95rem;
+  }
+
+  .close-dialog {
+    font-size: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}

@@ -1,0 +1,146 @@
+.business-container {
+ font-family: 'Montserrat', sans-serif !important;
+  color: #222;
+  max-width: 100%;
+  background-color: white;
+}
+
+/* Carousel */
+.business-carousel {
+  width: 100%;
+  /* height: 400px !important; */
+}
+
+.business-carousel h2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Section */
+.business-section {
+  padding: 0rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom:2rem;
+}
+
+.business-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #E67320;
+}
+
+/* Row layout */
+.business-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Text Block */
+.business-text {
+  flex: 0 0 55%;
+  min-width: 300px;
+  text-align: justify;
+}
+
+.business-text p,
+.business-text ul {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Image Block */
+.business-image {
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.business-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Bullets */
+.orange-bullets {
+  padding-top: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.orange-bullets li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.orange-bullets li::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #E67320;
+  border-radius: 50%;
+}
+
+.qualitysectionp {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.qualitysectionl {
+  text-align: justify;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5rem;
+
+}
+.qualitylogos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .business-row {
+    flex-direction: column;
+  }
+
+  .business-text,
+  .business-image {
+    flex: 0 0 100%;
+  }
+
+  .business-carousel {
+    height: 200px;
+  }
+
+  .business-carousel h2 {
+    font-size: 1.5rem;
+  }
+
+  .business-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .business-text p,
+  .orange-bullets li {
+    font-size: 1rem;
+  }
+}

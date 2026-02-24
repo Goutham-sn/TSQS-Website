@@ -1,0 +1,130 @@
+/* Container */
+.careers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif !important;
+  }
+  
+  /* Carousel Section */
+  .careers-carousel {
+       width: 100%;
+    position: relative;
+    /* height: 400px !important; */
+  }
+  
+  /* Content Section */
+  .careers-content {
+    max-width: 900px;
+    width: 100%;
+    padding: 0px 20px;
+  }
+  
+  .careers-content h1 {
+    margin-top: 2rem;
+    color: #e0721a;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* Job Cards */
+  .job-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Job Title */
+  .job-title {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    background-color: #f7f7f7;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #333;
+  }
+  
+  .job-title:hover,
+  .job-title.active {
+    background-color: #ffe4d1;
+  }
+  
+  /* Job Details */
+  .job-details {
+    padding: 20px;
+    background-color: white;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .job-details ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .job-details li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+  }
+
+  .job-description ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.job-description li {
+  margin-bottom: 0.4rem;
+}
+
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .careers-carousel {
+      font-size: 1.5rem;
+      height: 250px;
+      padding: 0 10px;
+    }
+
+     .careers-content h1 {
+    margin-top: 3.5rem;
+  }
+
+   .job-card {
+    margin-left:1rem;
+      margin-right:1rem;
+  }
+  
+    .job-title {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  
+    .job-details {
+      padding: 15px;
+    }
+  
+    .careers-content {
+      padding: 20px 15px;
+      
+    }
+  }
+  

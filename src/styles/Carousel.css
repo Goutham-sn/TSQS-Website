@@ -1,0 +1,223 @@
+.carousel-wrapper {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    overflow: hidden;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #5c129c, #b04c8e);
+    /* background: linear-gradient(135deg, rgba(255, 190, 130, 0.7), rgba(255, 190, 130, 0.7)); */
+  }
+  
+  .carousel-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    animation: fadeInUp 1s ease;
+    color:white;
+  }
+  
+  .carousel-text {
+    flex: 1;
+    padding-left: 1rem;
+    animation: slideUp 1s ease;
+  }
+  
+  .carousel-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+     backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  
+  }
+  
+  .carousel-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  .read-more-btnc {
+    padding: 0.6rem 1.2rem;
+    background-color:white;
+    color:#b04c8e ;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .carousel-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 2s ease;
+  }
+  
+  .carousel-image img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  }
+  
+  /* Navigation Buttons */
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.3rem 0.8rem;
+    z-index: 10;
+    border-radius: 5px;
+  }
+  
+  .carousel-btn.prev {
+    left: 20px;
+  }
+  
+  .carousel-btn.next {
+    right: 20px;
+  }
+
+  
+  /* Indicators */
+  .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    border:none;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border:none;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: #FF8D27;
+  }
+  
+  /* Animations */
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+ @media (max-width: 768px) {
+  .carousel-slide {
+    /* flex-direction: column; */
+    text-align: center;
+    gap: 0rem;
+  }
+
+  .carousel-text {
+    padding-left:1.5rem;
+    animation: slideUp 1s ease;
+  }
+
+  .carousel-text h1 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .carousel-text p {
+    font-size: 0.7rem;
+    margin-bottom: 1.2rem;
+    padding: 0 0rem;
+  }
+
+  .read-more-btnc {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    /* margin-bottom: 1rem; */
+  }
+
+  .carousel-image {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .carousel-image img {
+    max-width: 90%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+
+  .carousel-wrapper {
+    padding: 1.5rem 1rem;
+    min-height: 300px;
+
+  }
+
+  .carousel-btn {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.6rem;
+    margin-left: 0;
+  }
+
+  .carousel-indicators {
+    display: none;
+    bottom: 10px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+  
