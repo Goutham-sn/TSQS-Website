@@ -17,6 +17,7 @@ import BusinessModalDetailed from "./pages/BusinessModalDetailed";
 import "./../src/App.css";
 import QualityEng from "./pages/QualityEng";
 import ConsentPreferences from "./pages/ConsentPreferences";
+import AccessGen from "./pages/AccessGen";
 
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/expertise-detailed" element={<ExpertiseDetailed />}  />
           <Route path="/learning" element={<Learning />} />
           <Route path="/business-modal-detailed" element={<BusinessModalDetailed />} />
+          <Route path="/accessgen" element={<AccessGen />} />
         </Routes>
       </main>
       </div>

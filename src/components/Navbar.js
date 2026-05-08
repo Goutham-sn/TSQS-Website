@@ -97,13 +97,14 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/quality-engineering", label: "Quality Engineering" },
+              { to: "/accessgen", label: "Accessibility", isNew: true },
               { to: "/expertise", label: "Expertise" },
               { to: "/academy", label: "Academy" },
               { to: "/business-strategy", label: "Business Model" },
               { to: "/e-book", label: "e-Book" },
               { to: "/careers", label: "Careers" },
               { to: "/contact-us", label: "Contact Us" },
-            ].map(({ to, label }) => (
+            ].map(({ to, label, isNew }) => (
               <li key={to}>
                 <NavLink
                   to={to}
@@ -111,6 +112,7 @@ const Navbar = () => {
                   className={({ isActive }) => (isActive ? "nav-active" : "")}
                 >
                   {label}
+                  {isNew && <span className="nav-new-badge">NEW</span>}
                 </NavLink>
               </li>
             ))}
