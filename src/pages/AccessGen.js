@@ -86,7 +86,7 @@ const AccessGen = () => {
             Book a Demo Call
           </button>
         </div>
-        <div className="accessgen-hero-image">
+        <div className="accessgen-hero-image" aria-hidden="true">
           <div className="accessgen-scan-card">
             <div className="accessgen-scan-header">
               <div className="accessgen-scan-dots">
@@ -205,10 +205,10 @@ const AccessGen = () => {
 
       {/* Every Format, Every Standard */}
       <div className="accessgen-formats">
-        <p className="accessgen-section-label">Scanning Capabilities</p>
+        <p className="accessgen-section-label">Services</p>
         <h2>Every Format. Every Standard.</h2>
         <p className="accessgen-section-desc">
-          Accessibility barriers exist in every format your organization publishes. AccessGen covers all four of the most common channels where issues are found and where legal risk accumulates.
+          Accssgen provides the following Accessibility Testing and Compliance Services.
         </p>
         <div className="accessgen-formats-grid">
           <div className="accessgen-format-item">
@@ -266,10 +266,10 @@ const AccessGen = () => {
 
       {/* A Tool for Every Workflow */}
       <div className="accessgen-workflow">
-        <p className="accessgen-section-label">AccessGen Tools</p>
+        <p className="accessgen-section-label">Products</p>
         <h2>A Tool for Every Workflow</h2>
         <p className="accessgen-section-desc">
-          AccessGen is not just a scanner. It is a complete ecosystem of tools built for developers, QA engineers, designers, accessibility specialists, and procurement teams.
+          AccessGen includes four purpose-built tools that fit into different stages of the Development and Testing workflow.
         </p>
         <div className="accessgen-workflow-cards">
           <div className="accessgen-workflow-card">

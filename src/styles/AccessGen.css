@@ -31,11 +31,15 @@
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600;
-  color: #E67320;
+  background: linear-gradient(to right, #5c129c, #b04c8e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
   border: 1px solid #E67320;
+  border-image: linear-gradient(to right, #5c129c, #b04c8e) 1;
   padding: 4px 12px;
   border-radius: 4px;
 }
@@ -48,7 +52,7 @@
 }
 
 .accessgen-highlight {
-  color: #E67320;
+  color: #da7620;
 }
 
 .accessgen-hero-content p {
@@ -213,7 +217,7 @@
 }
 
 .accessgen-stat-value {
-  font-size: 1.1rem;
+  font-size: 19px;
   font-weight: 700;
 }
 
@@ -222,7 +226,7 @@
 }
 
 .stat-warning {
-  color: #E67320;
+  color: #da7620;
 }
 
 .stat-passed {
@@ -284,7 +288,10 @@
 .accessgen-section-label {
   font-size: 0.85rem;
   font-weight: 600;
-  color: #E67320;
+  background: linear-gradient(to right, #5c129c, #b04c8e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5rem;
