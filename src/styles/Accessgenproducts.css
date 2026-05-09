@@ -1,0 +1,145 @@
+/* ============================================================
+   AccessGenProducts.css   Products detail page
+   Scoped with agp-* prefix. Mirrors CodelessAutomation.css layout.
+   ============================================================ */
+
+.agp-container {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #222;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.agp-carousel {
+  width: 100%;
+  position: relative;
+}
+
+/* ── Page intro ─────────────────────────────────────────── */
+.agp-intro {
+  padding: 2rem 4rem;
+  background: white;
+}
+
+.agp-text-block p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 6px 0;
+}
+
+/* ── Alternating section background ─────────────────────── */
+.agp-section {
+  margin: 0;
+  padding: 3rem 4rem;
+  background: white;
+}
+
+.agp-section.agp-alt {
+  background: #f0f0f0;
+}
+
+.agp-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #e0721a;
+}
+
+/* ── Row layout ─────────────────────────────────────────── */
+.agp-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.agp-row.agp-reverse {
+  flex-direction: row-reverse;
+}
+
+/* ── Text block ─────────────────────────────────────────── */
+.agp-text {
+  flex: 0 0 55%;
+  min-width: 280px;
+}
+
+.agp-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 0.75rem;
+}
+
+.agp-text ul {
+  padding-left: 20px;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.agp-text ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ── Image block ─────────────────────────────────────────── */
+.agp-image {
+  flex: 0 0 38%;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.agp-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .agp-intro,
+  .agp-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agp-intro,
+  .agp-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .agp-row,
+  .agp-row.agp-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agp-text,
+  .agp-image {
+    flex: 0 0 100%;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .agp-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .agp-text p,
+  .agp-text ul {
+    font-size: 1rem;
+  }
+
+  .agp-carousel {
+    height: 250px !important;
+  }
+
+  .agp-intro {
+    margin-top: 1rem;
+  }
+}

@@ -1,10 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Expertise from "./pages/Expertise";
 import Academy from "./pages/Academy";
+import AccessGenServices from "./pages/Accessgenservices";
+import AccessGenProducts from "./pages/Accessgenproducts";
 import Ebook from "./pages/Ebook";
 import BusinessStrategy from "./pages/BusinessStrategy";
 import TestPage from "./pages/TestPage";
@@ -44,7 +46,11 @@ function App() {
           <Route path="/expertise-detailed" element={<ExpertiseDetailed />}  />
           <Route path="/learning" element={<Learning />} />
           <Route path="/business-modal-detailed" element={<BusinessModalDetailed />} />
-          <Route path="/accessgen" element={<AccessGen />} />
+          <Route path="/accessibility" element={<AccessGen />} />
+                    <Route path="/accessibility" element={<AccessGen />} />
+          <Route path="/accessibility-services" element={<AccessGenServices />} />
+          <Route path="/accessibility-products" element={<AccessGenProducts />} />
+          <Route path="/accessgen" element={<Navigate to="/accessibility" replace />} />
         </Routes>
       </main>
       </div>

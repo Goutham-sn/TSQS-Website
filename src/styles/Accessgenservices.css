@@ -1,0 +1,147 @@
+/* ============================================================
+   AccessGenServices.css   Services detail page
+   Scoped with ags-* prefix. Mirrors CodelessAutomation.css layout.
+   ============================================================ */
+
+.ags-container {
+  font-family: 'Montserrat', sans-serif !important;
+  color: #222;
+  line-height: 1.6;
+  max-width: 100%;
+}
+
+.ags-carousel {
+  width: 100%;
+  position: relative;
+}
+
+/* ── Page intro ─────────────────────────────────────────── */
+.ags-intro {
+  padding: 2rem 4rem;
+  margin-bottom: 0;
+  background: white;
+}
+
+.ags-text-block p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  text-align: justify;
+  padding: 6px 0;
+  border-radius: 5px;
+}
+
+/* ── Alternating section background ─────────────────────── */
+.ags-section {
+  margin: 0;
+  padding: 3rem 4rem;
+  background: white;
+}
+
+.ags-section.ags-alt {
+  background: #f0f0f0;
+}
+
+.ags-section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #e0721a;
+}
+
+/* ── Row layout ─────────────────────────────────────────── */
+.ags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ags-row.ags-reverse {
+  flex-direction: row-reverse;
+}
+
+/* ── Text block ─────────────────────────────────────────── */
+.ags-text {
+  flex: 0 0 55%;
+  min-width: 280px;
+}
+
+.ags-text p {
+  font-size: 1.1rem;
+  text-align: justify;
+  margin-bottom: 0.75rem;
+}
+
+.ags-text ul {
+  padding-left: 20px;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.ags-text ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* ── Image block ─────────────────────────────────────────── */
+.ags-image {
+  flex: 0 0 38%;
+  min-width: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ags-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 1024px) {
+  .ags-intro,
+  .ags-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .ags-intro,
+  .ags-section {
+    padding: 2rem 1.25rem;
+  }
+
+  .ags-row,
+  .ags-row.ags-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ags-text,
+  .ags-image {
+    flex: 0 0 100%;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .ags-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .ags-text p,
+  .ags-text ul {
+    font-size: 1rem;
+  }
+
+  .ags-carousel {
+    height: 250px !important;
+  }
+
+  .ags-intro {
+    margin-top: 1rem;
+  }
+}

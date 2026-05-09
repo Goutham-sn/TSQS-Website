@@ -84,7 +84,7 @@
 //               <div className="consent-category">
 //                 <h3>Analytics</h3>
 //                 <p>
-//                   Analytical cookies help understand visitor interactions — number of
+//                   Analytical cookies help understand visitor interactions  number of
 //                   visitors, bounce rate, etc.
 //                 </p>
 //               </div>

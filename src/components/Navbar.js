@@ -97,7 +97,7 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/quality-engineering", label: "Quality Engineering" },
-              { to: "/accessgen", label: "Accessibility", isNew: true },
+              { to: "/accessibility", label: "Accessibility", isNew: true },
               { to: "/expertise", label: "Expertise" },
               { to: "/academy", label: "Academy" },
               { to: "/business-strategy", label: "Business Model" },
@@ -106,14 +106,29 @@ const Navbar = () => {
               { to: "/contact-us", label: "Contact Us" },
             ].map(({ to, label, isNew }) => (
               <li key={to}>
-                <NavLink
-                  to={to}
-                  onClick={() => setIsOpen(false)}
-                  className={({ isActive }) => (isActive ? "nav-active" : "")}
-                >
-                  {label}
-                  {isNew && <span className="nav-new-badge">NEW</span>}
-                </NavLink>
+                {isNew ? (
+                  <span className="nav-link-with-badge">
+                    <NavLink
+                      to={to}
+                      onClick={() => setIsOpen(false)}
+                      className={({ isActive }) => (isActive ? "nav-active" : "")}
+                      aria-label={`${label}, new feature`}
+                    >
+                      {label}
+                    </NavLink>
+                    <span className="nav-new-badge" aria-hidden="true">
+                      NEW
+                    </span>
+                  </span>
+                ) : (
+                  <NavLink
+                    to={to}
+                    onClick={() => setIsOpen(false)}
+                    className={({ isActive }) => (isActive ? "nav-active" : "")}
+                  >
+                    {label}
+                  </NavLink>
+                )}
               </li>
             ))}
           </ul>

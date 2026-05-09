@@ -151,13 +151,13 @@
   }
   .know-more-btnq{
   padding: 0.6rem 1.4rem;
-  background-color: #e0721a;
+  background-color: #E67320;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 19px;
   margin-top: 1rem;
   margin-bottom: 1rem;
   transition: background-color 0.2s ease;
@@ -193,12 +193,13 @@
 
   .know-more-btn {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1.4rem;
     background-color: #E67320;
     color: white;
     border: none;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 19px;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

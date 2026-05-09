@@ -93,12 +93,13 @@
   /* Know More Button */
   .know-more-btn {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background-color: #FF944F;
+    padding: 0.6rem 1.4rem;
+    background-color: #E67320;
     color: white;
     border: none;
     border-radius: 6px;
-    font-size: 1rem;
+    font-size: 19px;
+    font-weight: 600;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }

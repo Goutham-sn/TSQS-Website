@@ -1,4 +1,4 @@
-# tsQs Inc — Corporate Website
+# tsQs Inc  Corporate Website
 
 The official corporate website for **tsQs Inc**, a quality engineering services company specializing in software testing, automation, and accessibility.
 
@@ -75,4 +75,4 @@ Builds the app for production to the `build` folder with optimized bundles.
 
 ## License
 
-Proprietary — tsQs Inc. All rights reserved.
+Proprietary  tsQs Inc. All rights reserved.
