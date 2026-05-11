@@ -3,13 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./../styles/AccessGen.css";
 import Carousel from "./Carousel";
 
-import imgWebAcc      from "./../Images/Service-Virtualization.jpg";
-import imgPdfAcc      from "./../Images/api.jpg";
-import imgWordAcc     from "./../Images/Certified-Professionals.jpg";
-import imgMobileAcc   from "./../Images/Mobile-App-Automation.jpeg";
-import imgRemediation from "./../Images/process improvment.jpeg";
-import imgVpat        from "./../Images/Certification1.png";
-
 import imgWidget      from "./../Images/arsolu.jpg";
 import imgBrowserExt  from "./../Images/toolintegration.jpg";
 import imgVsCode      from "./../Images/Industry-Leading-Tools.jpg";
@@ -95,12 +88,12 @@ const AccessGen = () => {
         <h2>Our Services</h2>
         <div className="ag-cards">
           {[
-            { img: imgWebAcc,      alt: "Web Accessibility",    title: "Web Accessibility",    hash: "#web-accessibility",    desc: "Scan any public or authenticated web page against WCAG 2.2 AA, Section 508, EN 301 549, ADA, GIGW 3.0, and more. Run batch scans using the Discover Links crawler for full site coverage." },
-            { img: imgPdfAcc,      alt: "PDF Accessibility",    title: "PDF Accessibility",    hash: "#pdf-accessibility",    desc: "Receive a detailed report covering tag tree structure, reading order, image alt text, table markup, form field labels, and color contrast against PDF/UA-1 and WCAG 2.2." },
-            { img: imgWordAcc,     alt: "Word Accessibility",   title: "Word Accessibility",   hash: "#word-accessibility",   desc: "Scan Microsoft Word documents at the source level. Fixing accessibility in the .docx file means every PDF generated from it inherits those fixes automatically." },
-            { img: imgMobileAcc,   alt: "Mobile Accessibility", title: "Mobile Accessibility", hash: "#mobile-accessibility", desc: "Connect a physical Android or iOS device via USB and run native accessibility tests. Tests VoiceOver, TalkBack, touch targets, focus order, and dynamic text scaling." },
-            { img: imgRemediation, alt: "Remediation",          title: "Remediation",          hash: "#remediation",          desc: "Expert-led remediation across web, document, and mobile  applying fixes at the code or document level through pull requests or patches, never through overlays." },
-            { img: imgVpat,        alt: "VPAT & ACR Services",  title: "VPAT & ACR Services",  hash: "#vpat-acr",             desc: "Prepare Voluntary Product Accessibility Templates (VPAT 2.5) and Accessibility Conformance Reports backed by independent audits, not self-assessment." },
+            { img: "/Accessibility/Web_Accessibility.jpg",    alt: "Web Accessibility",    title: "Web Accessibility",    hash: "#web-accessibility",    desc: "Scan any public or authenticated web page against WCAG 2.2 AA, Section 508, EN 301 549, ADA, GIGW 3.0, and more. Run batch scans using the Discover Links crawler for full site coverage." },
+            { img: "/Accessibility/PDF_Accessibility.jpg",    alt: "PDF Accessibility",    title: "PDF Accessibility",    hash: "#pdf-accessibility",    desc: "Receive a detailed report covering tag tree structure, reading order, image alt text, table markup, form field labels, and color contrast against PDF/UA-1 and WCAG 2.2." },
+            { img: "/Accessibility/Word_Accessibility.jpg",   alt: "Word Accessibility",   title: "Word Accessibility",   hash: "#word-accessibility",   desc: "Scan Microsoft Word documents at the source level. Fixing accessibility in the .docx file means every PDF generated from it inherits those fixes automatically." },
+            { img: "/Accessibility/Mobile_Accessibility.jpg", alt: "Mobile Accessibility", title: "Mobile Accessibility", hash: "#mobile-accessibility", desc: "Connect a physical Android or iOS device via USB and run native accessibility tests. Tests VoiceOver, TalkBack, touch targets, focus order, and dynamic text scaling." },
+            { img: "/Accessibility/Remediation.jpg",          alt: "Remediation",          title: "Remediation",          hash: "#remediation",          desc: "Expert-led remediation across web, document, and mobile  applying fixes at the code or document level through pull requests or patches, never through overlays." },
+            { img: "/Accessibility/VpatAcr.jpg",              alt: "VPAT & ACR Services",  title: "VPAT & ACR Services",  hash: "#vpat-acr",             desc: "Prepare Voluntary Product Accessibility Templates (VPAT 2.5) and Accessibility Conformance Reports backed by independent audits, not self-assessment." },
           ].map((svc) => (
             <div className="ag-card" key={svc.hash}>
               <img src={svc.img} alt={svc.alt} />
@@ -167,9 +160,33 @@ const AccessGen = () => {
       {/* CTA Banner */}
       <div className="ag-cta-banner">
         <p>
-          With tsQs, you don&apos;t just meet standards &mdash; you elevate user experience. Our expertise in
-          accessibility and universal design enables you to build inclusive, user-friendly digital
-          experiences that work for everyone, everywhere.
+          By partnering with tsQs, you not only achieve regulatory compliance but also expand your reach to a broader and more diverse audience. We help you create inclusive digital experiences grounded in universal design and usability for all.
+        </p>
+        <p className="ag-cta-contact-line">
+          To know more about AccessGen, Please{" "}
+          <a
+            href="https://accessgen-stage.tsqsinc.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact Us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              <polyline points="15 3 21 3 21 9" />
+              <line x1="10" y1="14" x2="21" y2="3" />
+            </svg>
+          </a>
         </p>
       </div>
 

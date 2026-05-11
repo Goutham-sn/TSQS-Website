@@ -97,10 +97,11 @@ const Navbar = () => {
             {[
               { to: "/", label: "Home" },
               { to: "/quality-engineering", label: "Quality Engineering" },
-              { to: "/accessibility", label: "Accessibility", isNew: true },
               { to: "/expertise", label: "Expertise" },
               { to: "/academy", label: "Academy" },
               { to: "/business-strategy", label: "Business Model" },
+              { to: "/accessibility", label: "Accessibility", isNew: true },
+              // { to: "#", label: "AI Services" },
               { to: "/e-book", label: "e-Book" },
               { to: "/careers", label: "Careers" },
               { to: "/contact-us", label: "Contact Us" },
