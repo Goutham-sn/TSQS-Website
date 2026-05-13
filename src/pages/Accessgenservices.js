@@ -3,13 +3,7 @@ import { useLocation } from "react-router-dom";
 import "./../styles/Accessgenservices.css";
 import Carousel from "./Carousel";
 
-import imgWebAcc      from "./../Images/Service-Virtualization.jpg";
-import imgPdfAcc      from "./../Images/api.jpg";
-import imgWordAcc     from "./../Images/Certified-Professionals.jpg";
-import imgMobileAcc   from "./../Images/Mobile-App-Automation.jpeg";
-import imgRemediation from "./../Images/process improvment.jpeg";
-import imgVpat        from "./../Images/Certification1.png";
-import imgVpat2       from "./../Images/Proof-Of-Concepts.jpeg";
+import imgVpat2 from "./../Images/Proof-Of-Concepts.jpeg";
 
 const AccessGenServices = () => {
   const location = useLocation();
@@ -75,7 +69,7 @@ const AccessGenServices = () => {
             </p>
           </div>
           <div className="ags-image">
-            <img src={imgWebAcc} alt="Web Accessibility Testing" />
+            <img src="/Accessibility/Web_Accessibility.jpg" alt="Web Accessibility Testing" />
           </div>
         </div>
       </section>
@@ -85,7 +79,7 @@ const AccessGenServices = () => {
         <h2>PDF Accessibility</h2>
         <div className="ags-row ags-reverse">
           <div className="ags-image">
-            <img src={imgPdfAcc} alt="PDF Accessibility Testing" />
+            <img src="/Accessibility/PDF_Accessibility.jpg" alt="PDF Accessibility Testing" />
           </div>
           <div className="ags-text">
             <p>
@@ -137,7 +131,7 @@ const AccessGenServices = () => {
             </p>
           </div>
           <div className="ags-image">
-            <img src={imgWordAcc} alt="Word Document Accessibility" />
+            <img src="/Accessibility/Word_Accessibility.jpg" alt="Word Document Accessibility" />
           </div>
         </div>
       </section>
@@ -147,7 +141,7 @@ const AccessGenServices = () => {
         <h2>Mobile Accessibility</h2>
         <div className="ags-row ags-reverse">
           <div className="ags-image">
-            <img src={imgMobileAcc} alt="Mobile Accessibility Testing" />
+            <img src="/Accessibility/Mobile_Accessibility.jpg" alt="Mobile Accessibility Testing" />
           </div>
           <div className="ags-text">
             <p>
@@ -199,7 +193,7 @@ const AccessGenServices = () => {
             </p>
           </div>
           <div className="ags-image">
-            <img src={imgRemediation} alt="Accessibility Remediation" />
+            <img src="/Accessibility/Remediation.jpg" alt="Accessibility Remediation" />
           </div>
         </div>
       </section>
@@ -209,7 +203,7 @@ const AccessGenServices = () => {
         <h2>VPAT &amp; ACR Services</h2>
         <div className="ags-row ags-reverse">
           <div className="ags-image">
-            <img src={imgVpat} alt="VPAT and ACR Compliance Documentation" />
+            <img src="/Accessibility/VpatAcr.jpg" alt="VPAT and ACR Compliance Documentation" />
           </div>
           <div className="ags-text">
             <p>

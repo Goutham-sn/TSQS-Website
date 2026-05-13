@@ -3,10 +3,6 @@ import { useNavigate } from "react-router-dom";
 import "./../styles/AccessGen.css";
 import Carousel from "./Carousel";
 
-import imgWidget      from "./../Images/arsolu.jpg";
-import imgBrowserExt  from "./../Images/toolintegration.jpg";
-import imgVsCode      from "./../Images/Industry-Leading-Tools.jpg";
-import imgBookmarks   from "./../Images/GUI-Automation.jpg";
 
 const standards = [
   { name: "WCAG 2.2",    detail: "Level AA & AAA",        region: "Global"         },
@@ -37,7 +33,7 @@ const AccessGen = () => {
 
       {/* Intro */}
       <div className="ag-intro">
-        <h1>Accessibility Testing &amp; Quality Engineering</h1>
+        <h1>Accessibility Testing</h1>
         <p>
           At tsQs, we specialize in delivering end-to-end accessibility testing as an integral part of
           modern quality engineering. Accessibility is not treated as a one-time audit, but as a continuous
@@ -117,10 +113,10 @@ const AccessGen = () => {
         <h2>Our Products</h2>
         <div className="ag-cards">
           {[
-            { img: imgWidget,     alt: "AGEN Widget",         title: "AGEN Widget",         hash: "#agen-widget",     desc: "An embeddable accessibility toolbar giving every visitor one-click control over their browsing experience. Six disability profiles with color blindness correction and reading assistance." },
-            { img: imgBrowserExt, alt: "Browser Extension",   title: "Browser Extension",   hash: "#browser-ext",     desc: "Test any web page  including secured, authenticated, and behind-login pages  directly from your browser. Built-in contrast checker, tab order overlay, and detailed reports." },
-            { img: imgVsCode,     alt: "VS Code Extension",   title: "VS Code Extension",   hash: "#vscode-ext",      desc: "Fix accessibility issues as you write code. Inline WCAG 2.2 diagnostics appear like ESLint errors with one-click Quick Fix actions for HTML, JSX, TSX, Vue, and Svelte." },
-            { img: imgBookmarks,  alt: "WCAG Bookmarklets",   title: "WCAG Bookmarklets",   hash: "#bookmarklets",    desc: "Professional bookmarklets for instant, in-browser accessibility testing across six categories: Outline, Forms, Color, Images, Information Testing, and Information Analysis." },
+            { img: "/Accessibility/A11yWidget.jpg",       alt: "AGEN Widget",       title: "AGEN Widget",       hash: "#agen-widget", desc: "An embeddable accessibility toolbar giving every visitor one-click control over their browsing experience. Six disability profiles with color blindness correction and reading assistance." },
+            { img: "/Accessibility/Browser_Extension.jpg", alt: "Browser Extension", title: "Browser Extension", hash: "#browser-ext", desc: "Test any web page  including secured, authenticated, and behind-login pages  directly from your browser. Built-in contrast checker, tab order overlay, and detailed reports." },
+            { img: "/Accessibility/Vscode_Extension.jpg",  alt: "VS Code Extension", title: "VS Code Extension", hash: "#vscode-ext",  desc: "Fix accessibility issues as you write code. Inline WCAG 2.2 diagnostics appear like ESLint errors with one-click Quick Fix actions for HTML, JSX, TSX, Vue, and Svelte." },
+            { img: "/Accessibility/A11yBookmarks.jpg",     alt: "WCAG Bookmarklets", title: "WCAG Bookmarklets", hash: "#bookmarklets", desc: "Professional bookmarklets for instant, in-browser accessibility testing across six categories: Outline, Forms, Color, Images, Information Testing, and Information Analysis." },
           ].map((prod) => (
             <div className="ag-card" key={prod.hash}>
               <img src={prod.img} alt={prod.alt} />

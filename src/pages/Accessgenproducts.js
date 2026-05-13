@@ -3,12 +3,8 @@ import { useLocation } from "react-router-dom";
 import "./../styles/Accessgenproducts.css";
 import Carousel from "./Carousel";
 
-import imgWidget     from "./../Images/arsolu.jpg";
-import imgBrowserExt from "./../Images/toolintegration.jpg";
-import imgVsCode     from "./../Images/Industry-Leading-Tools.jpg";
-import imgBookmarks  from "./../Images/GUI-Automation.jpg";
-import imgWidget2    from "./../Images/bm1.jpg";
-import imgVsCode2    from "./../Images/bm2.jpg";
+import imgWidget2 from "./../Images/bm1.jpg";
+import imgVsCode2 from "./../Images/bm2.jpg";
 
 const AccessGenProducts = () => {
   const location = useLocation();
@@ -75,7 +71,7 @@ const AccessGenProducts = () => {
             </p>
           </div>
           <div className="agp-image">
-            <img src={imgWidget} alt="AGEN Accessibility Widget" />
+            <img src="/Accessibility/A11yWidget.jpg" alt="AGEN Accessibility Widget" />
           </div>
         </div>
         <div className="agp-row" style={{ marginTop: "2rem" }}>
@@ -105,7 +101,7 @@ const AccessGenProducts = () => {
         <h2>Browser Extension</h2>
         <div className="agp-row agp-reverse">
           <div className="agp-image">
-            <img src={imgBrowserExt} alt="Browser Extension for Accessibility Testing" />
+            <img src="/Accessibility/Browser_Extension.jpg" alt="Browser Extension for Accessibility Testing" />
           </div>
           <div className="agp-text">
             <p>
@@ -160,7 +156,7 @@ const AccessGenProducts = () => {
             </p>
           </div>
           <div className="agp-image">
-            <img src={imgVsCode} alt="VS Code Accessibility Extension" />
+            <img src="/Accessibility/Vscode_Extension.jpg" alt="VS Code Accessibility Extension" />
           </div>
         </div>
         <div className="agp-row" style={{ marginTop: "2rem" }}>
@@ -190,7 +186,7 @@ const AccessGenProducts = () => {
         <h2>WCAG Bookmarklets</h2>
         <div className="agp-row agp-reverse">
           <div className="agp-image">
-            <img src={imgBookmarks} alt="WCAG Bookmarklets for Accessibility Testing" />
+            <img src="/Accessibility/A11yBookmarks.jpg" alt="WCAG Bookmarklets for Accessibility Testing" />
           </div>
           <div className="agp-text">
             <p>
