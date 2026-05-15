@@ -49,7 +49,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -57,15 +57,17 @@
   
   .business-card {
     flex: 0 1 calc(50% - 2rem); /* Two per row */
-    max-width: 300px;
+    max-width: 332px;
+    box-sizing: border-box;
     background-color: #f9f9f9;
     border-radius: 12px;
     padding: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
   
   .business-card:hover {
@@ -73,9 +75,17 @@
   }
   
   .business-card img {
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
     height: auto;
+    object-fit: contain;
+    object-position: center;
     border-radius: 8px;
+    display: block;
+    margin-inline: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
   }
   
   .business-card h3 {
@@ -90,12 +100,13 @@
     font-size: 1.1rem;
     font-weight: 350;
      color: rgb(51, 49, 49);
+    flex-grow: 1;
   }
   
   /* Know More Button */
   .know-more-btnb {
-    align-items: center;
-    justify-content: center;
+    align-self: center;
+    width: fit-content;
     margin-top: 1rem;
     padding: 0.6rem 1.4rem;
     background-color: #E67320;
@@ -108,8 +119,24 @@
     transition: background-color 0.3s ease;
   }
   
-  .know-more-btn:hover {
+  .know-more-btnb:hover,
+  .business-card .know-more-btn:hover {
     background-color: #e67b33;
+  }
+
+  .business-card .know-more-btn {
+    align-self: center;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.6rem 1.4rem;
+    background-color: #E67320;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   /* Responsive Design */

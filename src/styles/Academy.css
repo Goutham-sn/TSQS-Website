@@ -63,6 +63,10 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    box-sizing: border-box;
   }
   
   .academy-card:hover {
@@ -70,9 +74,17 @@
   }
   
   .academy-card img {
-    width: 100%;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
     height: auto;
+    object-fit: contain;
+    object-position: center;
     border-radius: 8px;
+    display: block;
+    margin-inline: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
   }
   
   .academy-card h3 {
@@ -85,10 +97,13 @@
     margin-top: 0.5rem;
     font-size: 1.1rem;
     font-weight: 350;
+    flex-grow: 1;
   }
   
   /* Know More Button */
   .know-more-btn {
+    align-self: center;
+    width: fit-content;
     margin-top: 1rem;
     padding: 0.6rem 1.4rem;
     background-color: #E67320;

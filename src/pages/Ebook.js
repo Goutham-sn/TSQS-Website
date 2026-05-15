@@ -70,6 +70,36 @@ const Ebook = () => {
   //   else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) errs.email = "Enter a valid email address.";
   //   return errs;
   // };
+  const isCorporateEmail = (email) => {
+    // Accept only "corporate" addresses by blocking common free email providers.
+    // Adjust the blacklist if your definition differs.
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) return false;
+
+    const forbiddenDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "yahoo.co.in",
+      "outlook.com",
+      "hotmail.com",
+      "live.com",
+      "msn.com",
+      "icloud.com",
+      "aol.com",
+      "protonmail.com",
+      "proton.me",
+      "gmx.com",
+      "mail.com",
+      "comcast.net",
+      "att.net",
+      "ymail.com",
+      "rocketmail.com",
+    ];
+
+    const domain = email.split("@")[1]?.toLowerCase() || "";
+    return !forbiddenDomains.some((d) => domain === d || domain.endsWith("." + d));
+  };
+
   const validate = () => {
   const errs = {};
 
@@ -93,8 +123,8 @@ const Ebook = () => {
 
   if (!formData.email.trim()) {
     errs.email = "Email is required.";
-  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-    errs.email = "Enter a valid email address.";
+  } else if (!isCorporateEmail(formData.email)) {
+    errs.email = "Please enter your Corporate email address";
   }
 
   return errs;
@@ -168,7 +198,7 @@ const Ebook = () => {
         </div>
 
         <div className="ebook-intro">
-          <h1>Download Our e-Book</h1>
+          <h1>Download e-Book</h1>
           <p>Please fill in the form below to get access to our e-Book.</p>
         </div>
 
@@ -236,7 +266,7 @@ const Ebook = () => {
                 )}
               </div>
               <div className="form-group">
-                <label htmlFor="email">Company Email *</label>
+                <label htmlFor="email">Corporate Mail *</label>
                 <input
                   type="email"
                   id="email"
@@ -269,7 +299,7 @@ const Ebook = () => {
 
             <div className="button-wrapper">
               <button type="submit" className="download-btn" disabled={loading}>
-                {loading ? "Submitting..." : "Download e-Book"}
+                {loading ? "Submitting..." : "Submit"}
               </button>
             </div>
           </form>

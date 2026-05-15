@@ -65,23 +65,36 @@ const ContactUs = () => {
     }
   }, [success]);
 
-  // const validate = (field, value) => {
-  //   let error = "";
-  //   if (!value.trim()) {
-  //     error = "This field is required.";
-  //   } else {
-  //     if (field === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-  //       error = "Enter a valid email address.";
-  //     }
-  //     if (field === "phone" && !/^[0-9]{10}$/.test(value)) {
-  //       error = "Enter a 10-digit phone number.";
-  //     }
-  //     if (field === "name" && /\d/.test(value)) {
-  //       error = "Name cannot contain numbers.";
-  //     }
-  //   }
-  //   return error;
-  // };
+  const isCorporateEmail = (email) => {
+    // Accept only "corporate" addresses by blocking common free email providers.
+    // Adjust the blacklist if your definition differs.
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) return false;
+
+    const forbiddenDomains = [
+      "gmail.com",
+      "yahoo.com",
+      "yahoo.co.in",
+      "outlook.com",
+      "hotmail.com",
+      "live.com",
+      "msn.com",
+      "icloud.com",
+      "aol.com",
+      "protonmail.com",
+      "proton.me",
+      "gmx.com",
+      "mail.com",
+      "comcast.net",
+      "att.net",
+      "ymail.com",
+      "rocketmail.com",
+    ];
+
+    const domain = email.split("@")[1]?.toLowerCase() || "";
+    return !forbiddenDomains.some((d) => domain === d || domain.endsWith("." + d));
+  };
+
    const validate = (field, value) => {
   if (!value.trim()) {
     switch (field) {
@@ -97,8 +110,8 @@ const ContactUs = () => {
         return "This field is required.";
     }
   } else {
-    if (field === "email" && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
-      return "Enter a valid email address.";
+    if (field === "email" && !isCorporateEmail(value)) {
+      return "Please enter your Corporate email address";
     }
     if (field === "phone" && !/^[0-9]{10}$/.test(value)) {
       return "Enter a 10-digit phone number.";
@@ -215,7 +228,7 @@ const ContactUs = () => {
 
           <div className="form-group">
             <label htmlFor="email">
-              Email <span aria-hidden="true">*</span>
+              Corporate Mail <span aria-hidden="true">*</span>
             </label>
             <input
               type="email"

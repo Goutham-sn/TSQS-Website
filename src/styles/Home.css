@@ -97,13 +97,17 @@
   
   .card {
     flex: 1 1 250px;
-    max-width: 300px;
+    max-width: 332px;
+    box-sizing: border-box;
     background: #f9f9f9;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
   
   .card:hover {
@@ -111,25 +115,34 @@
   }
   
   .card img {
-    width: 170px;
-    max-width: 300px;
-    height:300px;
+    width: 300px;
+    max-width: 100%;
+    aspect-ratio: 1 / 1;
     height: auto;
     border-radius: 8px;
     object-fit: contain;
-
+    object-position: center;
+    display: block;
+    margin-inline: auto;
+    flex-shrink: 0;
+    box-sizing: border-box;
   }
   
   .card p {
-    margin-top: 1 rem;
+    margin-top: 1rem;
     font-weight: 200;
     font-size: 1rem;
     line-height: 1.5;
-    height: 4.5rem !important;
+    min-height: 4.5rem;
     margin-bottom: 1.5rem;
     text-align: justify;
     color: rgb(51, 49, 49);
-    
+    flex-grow: 1;
+  }
+
+  .card .know-more-btn {
+    align-self: center;
+    width: fit-content;
   }
   
 /*expertise section*/
@@ -152,12 +165,16 @@
 
 .expertise-card {
   flex: 1 1 250px;
-  max-width: 300px;
+  max-width: 332px;
+  box-sizing: border-box;
   background-color: #f9f9f9;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .expertise-card:hover {
@@ -165,15 +182,24 @@
 }
 
 .expertise-card img {
-  width: 100%;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
+  display: block;
+  margin-inline: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .expertise-card p {
   margin-top: 1rem;
   font-size: 1.1rem;
   font-weight: 350;
+  flex-grow: 1;
 }
 
 
@@ -194,12 +220,16 @@
 
 .business-card {
   flex: 1 1 250px;
-  max-width: 300px;
+  max-width: 332px;
+  box-sizing: border-box;
   background-color: #f9f9f9;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .business-card:hover {
@@ -207,17 +237,25 @@
 }
 
 .business-card img {
-  width: 0%;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   height: auto;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
+  display: block;
+  margin-inline: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .business-card p {
-  
   margin-top: 1rem;
   font-size: 1.1rem;
   font-weight: 350;
   text-align: justify;
+  flex-grow: 1;
 }
 
 
@@ -339,15 +377,19 @@
 }
 
 .model-item img {
-  width: 100%;
-  max-width: 300px;
-  height: 350px;
-  object-fit: contain; 
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .model-item h3 {

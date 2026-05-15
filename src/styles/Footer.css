@@ -15,8 +15,11 @@
   }
   
   .footer-section h3 {
-    /* border-bottom: 2px solid #f4f4f4; */
+    margin: 0 0 0.5rem;
     padding-bottom: 5px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #FF944F;
   }
   
   .footer-section ul {
@@ -37,6 +40,28 @@
     color: #FF944F;
   }
 
+  .footer-quicklinks-cols {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1.25rem 2.5rem;
+  }
+
+  .footer-quicklinks-col {
+    flex: 1 1 150px;
+    min-width: 0;
+  }
+
+  .footer-quicklinks .footer-quicklinks-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-quicklinks .footer-quicklinks-list li {
+    margin: 8px 0;
+  }
+
   .footer-section p {
     margin: 5px 0;
   }
@@ -53,6 +78,23 @@
   
     .footer-section {
       margin-bottom: 15px;
+    }
+
+    .footer-quicklinks-cols {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.25rem 2.5rem;
+    }
+
+    .footer-quicklinks-col {
+      flex: 1 1 100%;
+      max-width: 280px;
+      text-align: left;
+    }
+
+    .footer-quicklinks-col h3 {
+      text-align: left;
     }
   }
 
